@@ -83,3 +83,9 @@ Installa i software con il seguente comando:
 ```sh
 yay -S visual-studio-code-bin
 ```
+
+### Software per le utilities
+
+```sh
+yay -S discord telegram-desktop
+```
