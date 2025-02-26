@@ -75,3 +75,11 @@ git config --global user.email johndoe@example.com
 ```
 
 Sostituisci John Doe con il tuo nome e cognome, e sostituisci la mail correttamente.
+
+### software per il software development
+
+Installa i software con il seguente comando:
+
+```sh
+yay -S visual-studio-code-bin
+```
