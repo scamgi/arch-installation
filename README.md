@@ -64,3 +64,14 @@ stow zsh
 ```
 
 Così viene copiato il link a quel file della cartella zsh.
+
+### git config
+
+Per configurare git e per fare i commit devi eseguire il seguente comando:
+
+```sh
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Sostituisci John Doe con il tuo nome e cognome, e sostituisci la mail correttamente.
