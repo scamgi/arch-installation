@@ -88,7 +88,7 @@ yay -S visual-studio-code-bin
 
 ```sh
 sudo pacman -Sy vlc
-sudo pacman -S rclone fastfetch ranger
+sudo pacman -S rclone fastfetch ranger testdisk
 yay -S discord telegram-desktop
 ```
 
