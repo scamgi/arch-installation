@@ -87,6 +87,14 @@ yay -S visual-studio-code-bin
 ### Software per le utilities
 
 ```sh
-sudo pacman -S rclone fastfetch
+sudo pacman -Sy vlc
+sudo pacman -S rclone fastfetch ranger
 yay -S discord telegram-desktop
+```
+
+### Per installare Mega
+
+```sh
+sudo pacman -S wget
+wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U "$PWD/megasync-x86_64.pkg.tar.zst"
 ```
