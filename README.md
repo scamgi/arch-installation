@@ -87,6 +87,6 @@ yay -S visual-studio-code-bin
 ### Software per le utilities
 
 ```sh
-sudo pacman -S rclone
+sudo pacman -S rclone fastfetch
 yay -S discord telegram-desktop
 ```
