@@ -1,6 +1,6 @@
-# Arch Installation on HP Laptop
+# dotfiles
 
-Questo repository serve per me per ricordarmi cosa faccio durante l'installazione di arch linux, comprendendo anche tutte le cose che faccio anche dopo l'installazione.
+Questo repository serve per me per ricordarmi cosa faccio durante l'installazione di arch linux, comprendendo anche tutte le cose che faccio anche dopo l'installazione. Comprende anche dei file di configurazione che possono interessarmi per macos.
 
 ## Installazione di Arch
 
@@ -104,4 +104,18 @@ wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst &&
 ```sh
 sudo pacman -S ntfs-3g
 sudo pacman -S exfat-utils exfatprogs
+```
+
+# dotfiles per macos
+
+Per macos, per il momento l'unico file di configurazione utile è quello di vim. Se vuoi configurarlo, assocurati prima di aver installato stow:
+
+```sh
+brew install stow
+```
+
+Dopodiché esegui questo comando stow per creare dei link a questi file di configurazione:
+
+```sh
+stow vim
 ```
