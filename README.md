@@ -98,3 +98,10 @@ yay -S discord telegram-desktop
 sudo pacman -S wget
 wget https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-x86_64.pkg.tar.zst && sudo pacman -U "$PWD/megasync-x86_64.pkg.tar.zst"
 ```
+
+### Per installare i filesystem
+
+```sh
+sudo pacman -S ntfs-3g
+sudo pacman -S exfat-utils exfatprogs
+```
