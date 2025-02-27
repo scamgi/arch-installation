@@ -198,7 +198,7 @@ echo
 # echo ":: Installation complete."
 # echo
 # Start Spinner
-gum spin --spinner dot --title "Starting setup now..." -- sleep 3
+gum spin --spinner line --title "Starting setup now..." -- sleep 3
 
 # Start setup
 # ml4w-hyprland-setup -p arch
