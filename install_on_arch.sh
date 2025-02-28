@@ -86,13 +86,20 @@ _installYay() {
     echo ":: yay has been installed successfully."
 }
 
-# Required packages for the installer
-packages=(
+# Required dependencies for the installer
+dependencies=(
     "wget"
     "unzip"
     "gum"
     # "rsync"
     "git"
+)
+
+packages=(
+    # These are just examples. Add more packages later.
+    "vlc"
+    "rclone"
+    "fastfetch"
 )
 
 # latest_version=$(get_latest_release)
@@ -164,9 +171,9 @@ done
 sudo pacman -Sy
 echo
 
-# Install required packages
-echo ":: Checking that required packages are installed..."
-_installPackages "${packages[@]}"
+# Install required dependencies
+echo ":: Checking that required dependencies are installed..."
+_installPackages "${dependencies[@]}"
 
 # cloning the repository
 if gum confirm "Do you want to clone the repository?"; then
@@ -191,6 +198,13 @@ if gum confirm "Do you want to install cosmic?"; then
     yay -S --noconfirm cosmic
 else
     echo ":: Cosmic installation skipped"
+fi
+
+if gum confirm "Do you want to install extra packages?"; then
+    echo ":: Installing extra packages..."
+    _installPackages "${packages[@]}"
+else
+    echo ":: Extra packages installation skipped."
 fi
 
 # Select the dotfiles version
