@@ -1,3 +1,5 @@
+# Montare un disco
+
 Per accedere a un hard disk esterno collegato al tuo laptop con Arch Linux tramite terminale, segui questi passaggi:
 
 1. **Identifica il dispositivo**: Apri il terminale e digita `lsblk` per visualizzare tutti i dispositivi di archiviazione collegati. Cerca il nome del dispositivo che corrisponde al tuo hard disk esterno, ad esempio `sdb1`.
