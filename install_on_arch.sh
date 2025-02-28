@@ -186,6 +186,13 @@ else
 fi
 echo
 
+if gum confirm "Do you want to install cosmic?"; then
+    echo ":: Installing cosmic..."
+    yay -S --noconfirm cosmic
+else
+    echo ":: Cosmic installation skipped"
+fi
+
 # Select the dotfiles version
 # echo "Please choose between: "
 # echo "- ML4W Dotfiles for Hyprland $latest_version (latest stable release)"
