@@ -13,6 +13,7 @@ clear
 # Download Folder
 # -----------------------------------------------------
 download_folder="$HOME/.dotfiles"
+repo_folder="$HOME/.dotfiles/dotfiles"
 
 # Create download_folder if not exists
 if [ ! -d $download_folder ]; then
@@ -166,6 +167,15 @@ echo
 # Install required packages
 echo ":: Checking that required packages are installed..."
 _installPackages "${packages[@]}"
+
+# cloning the repository
+if gum confirm "Do you want to clone the repository?"; then
+    echo ":: Cloning the repository..."
+    git clone https://github.com/scamgi/dotfiles.git $repo_folder
+else
+    echo ":: Installation canceled"
+    exit 130
+fi
 
 # Install yay if needed
 if _checkCommandExists "yay"; then
