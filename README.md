@@ -24,10 +24,16 @@ Ricordati di:
 - Cambiare il layout della tastiera.
 - Selezionare systemd-boot come boot loader (è il più veloce).
 - Usa un profilo minimale. Evita di installare un desktop environment.
-- Come packages aggiuntivi ricordati di includere: git vim
+- Come packages aggiuntivi ricordati di includere: git vim curl
 - Per l'audio installa pipewire
 
 ## Post installazione
+
+A seguito dell'installazione di arch linux, esegui questo comando per avviare l'installazione di questo dotfile:
+
+```sh
+bash <(curl -s https://raw.githubusercontent.com/scamgi/dotfiles/main/setup-arch.sh)
+```
 
 Per il post installazione, esegui questo comando per installare cosmic:
 
